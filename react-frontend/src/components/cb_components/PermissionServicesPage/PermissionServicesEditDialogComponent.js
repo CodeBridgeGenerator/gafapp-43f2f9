@@ -84,8 +84,7 @@ const PermissionServicesCreateDialogComponent = (props) => {
     "userGuide",
     "userInvites",
     "userPhones",
-    "users",
-    "vendingMachines",
+    "users"
   ];
   // const [serviceOptions, setServiceOptions] = useState([]);
   const [serviceOptions, setServiceOptions] = useState(fixedServiceOptions);

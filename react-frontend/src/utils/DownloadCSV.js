@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
 import client from "../services/restClient";
-import exportConfig from "./exportConfig";
 
 const DownloadExcel = ({ data, fileName, triggerDownload, setTriggerDownload, selectedData }) => {
   const [schema, setSchema] = useState(null);

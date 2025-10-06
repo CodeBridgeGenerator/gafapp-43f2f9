@@ -52,7 +52,7 @@ export const AdminControl = (props) => {
                 <p className="mt-4 text-base leading-6">
                   <p className="mt-4 text-base leading-6">
                     Welcome to the App dashboard
-                    - a centralized platform for managing vending machines and
+                    - a centralized platform for managing data and
                     their workflows.
                   </p>
                 </p>
