@@ -1,6 +1,6 @@
 const { Queue, Worker } = require("bullmq");
 const connection = require("../cbServices/redis/config");
-const config = require("../resources/config.json");
+
 const _ = require("lodash");
 
 // Create and export the job queue

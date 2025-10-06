@@ -41,7 +41,6 @@ module.exports = function (app) {
       },
       remarks: {
         type: String,
-        required: true,
         comment:
           "Remarks, inputTextarea, false, true, true, true, true, true, true, , , , ,",
       },

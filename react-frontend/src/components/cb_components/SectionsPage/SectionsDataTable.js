@@ -22,6 +22,7 @@ import client from "../../../services/restClient";
 import { Dropdown } from "primereact/dropdown";
 import { connect } from "react-redux";
 import { Skeleton } from "primereact/skeleton";
+import { Checkbox } from "primereact/checkbox";
 
 const SectionsDataTable = ({
   items,

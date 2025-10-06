@@ -44,7 +44,7 @@ const ProjectProposalsCreateDialogComponent = (props) => {
       init = initilization(
         { ...props?.entity, ...init },
         [proposalRef, quotation, approvedBy],
-        setError,
+        setError
       );
     }
     set_entity({ ...init });
@@ -55,8 +55,13 @@ const ProjectProposalsCreateDialogComponent = (props) => {
     let ret = true;
     const error = {};
 
-    if (_.isEmpty(_entity?.remarks)) {
-      error["remarks"] = `Remarks field is required`;
+    if (_.isEmpty(_entity?.proposalRef)) {
+      error["proposalRef"] = `Proposal Reference field is required`;
+      ret = false;
+    }
+
+    if (_.isEmpty(_entity?.quotation)) {
+      error["quotation"] = `Quotation Reference field is required`;
       ret = false;
     }
     if (!ret) setError(error);
@@ -138,7 +143,7 @@ const ProjectProposalsCreateDialogComponent = (props) => {
         setProposalRef(
           res.data.map((e) => {
             return { name: e["proposalRef"], value: e._id };
-          }),
+          })
         );
       })
       .catch((error) => {
@@ -166,7 +171,7 @@ const ProjectProposalsCreateDialogComponent = (props) => {
         setQuotation(
           res.data.map((e) => {
             return { name: e["quoteNo"], value: e._id };
-          }),
+          })
         );
       })
       .catch((error) => {
@@ -194,7 +199,7 @@ const ProjectProposalsCreateDialogComponent = (props) => {
         setApprovedBy(
           res.data.map((e) => {
             return { name: e["name"], value: e._id };
-          }),
+          })
         );
       })
       .catch((error) => {
@@ -299,7 +304,7 @@ const ProjectProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field flex">
+        <div className="col-12 md:col-3 field flex">
           <span className="align-items-center">
             <label htmlFor="approved">Approved:</label>
             <Checkbox
@@ -317,7 +322,25 @@ const ProjectProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
+        <div className="col-12 md:col-3 field flex">
+          <span className="align-items-center">
+            <label htmlFor="rejected">Rejected:</label>
+            <Checkbox
+              id="rejected"
+              className="ml-3"
+              checked={_entity?.rejected}
+              onChange={(e) => setValByKey("rejected", e.checked)}
+            />
+          </span>
+          <small className="p-error">
+            {!_.isEmpty(error["rejected"]) ? (
+              <p className="m-0" key="error-rejected">
+                {error["rejected"]}
+              </p>
+            ) : null}
+          </small>
+        </div>
+        <div className="col-12 md:col-3 field">
           <span className="align-items-center">
             <label htmlFor="approvedDate">Approved Date:</label>
             <Calendar
@@ -339,7 +362,9 @@ const ProjectProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
+
+        
+        <div className="col-12 md:col-3 field">
           <span className="align-items-center">
             <label htmlFor="approvedBy">Approved By:</label>
             <Dropdown
@@ -359,25 +384,7 @@ const ProjectProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field flex">
-          <span className="align-items-center">
-            <label htmlFor="rejected">Rejected:</label>
-            <Checkbox
-              id="rejected"
-              className="ml-3"
-              checked={_entity?.rejected}
-              onChange={(e) => setValByKey("rejected", e.checked)}
-            />
-          </span>
-          <small className="p-error">
-            {!_.isEmpty(error["rejected"]) ? (
-              <p className="m-0" key="error-rejected">
-                {error["rejected"]}
-              </p>
-            ) : null}
-          </small>
-        </div>
-        <div className="col-12 md:col-6 field">
+        <div className="col-12 field">
           <span className="align-items-center">
             <label htmlFor="remarks">Remarks:</label>
             <InputTextarea
@@ -422,5 +429,5 @@ const mapDispatch = (dispatch) => ({
 
 export default connect(
   mapState,
-  mapDispatch,
+  mapDispatch
 )(ProjectProposalsCreateDialogComponent);

@@ -17,62 +17,52 @@ module.exports = function (app) {
           "Project Name, dropdown, false, true, true, true, true, true, true, projects, projects, one-to-one, projectName,",
       },
       applicationCost: {
-        type: Number,
-        max: 10000000,
+        type: String,
         comment:
           "Application Cost, currency, false, true, true, true, true, true, true, , , , ,",
       },
       supportCost: {
-        type: Number,
-        max: 10000000,
+        type: String,
         comment:
           "Support Cost, currency, false, true, true, true, true, true, true, , , , ,",
       },
       firstMilestonePayment: {
-        type: Number,
-        max: 1000000,
+        type: String,
         comment:
           "First Milestone Payment, currency, false, true, true, true, true, true, true, , , , ,",
       },
       secondMilestonePayment: {
-        type: Number,
-        max: 1000000,
+        type: String,
         comment:
           "Second Milestone Payment, currency, false, true, true, true, true, true, true, , , , ,",
       },
       thirdMilestonePayment: {
-        type: Number,
-        max: 1000000,
+        type: String,
         comment:
           "Third Milestone Payment, currency, false, true, true, true, true, true, true, , , , ,",
       },
       fourthMilestonePayment: {
-        type: Number,
-        max: 1000000,
+        type: String,
         comment:
           "Fourth Milestone Payment, currency, false, true, true, true, true, true, true, , , , ,",
       },
       fifthMilestonePayment: {
-        type: Number,
-        max: 1000000,
+        type: String,
         comment:
           "Fifth Milestone Payment, currency, false, true, true, true, true, true, true, , , , ,",
       },
       applicationCostSST: {
-        type: Number,
-        max: 1000000,
+        type: String,
         comment:
           "Application Cost SST, currency, false, true, true, true, true, true, true, , , , ,",
       },
       supportCostSST: {
-        type: Number,
-        max: 1000000,
+        type: String,
         comment:
           "Support Cost SST, currency, false, true, true, true, true, true, true, , , , ,",
       },
       revision: {
         type: Number,
-        max: 1000000,
         comment:
           "Revision, p_number, false, true, true, true, true, true, true, , , , ,",
       },
@@ -91,7 +81,6 @@ module.exports = function (app) {
       file: {
         type: [Schema.Types.ObjectId],
         ref: "document_storages",
-        required: true,
         comment:
           "File, file_upload, false, true, true, true, true, true, true, , , , ,",
       },

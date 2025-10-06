@@ -19,6 +19,7 @@ import DuplicateIcon from "../../../assets/media/Duplicate.png";
 import DeleteIcon from "../../../assets/media/Trash.png";
 import client from "../../../services/restClient";
 
+
 const ProfileMenuDataTable = ({
   items,
   fields,

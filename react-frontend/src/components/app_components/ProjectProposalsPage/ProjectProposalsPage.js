@@ -371,8 +371,8 @@ const ProjectProposalsPage = (props) => {
       <div className="grid">
         <div className="col-6 flex align-items-center justify-content-start">
           <h4 className="mb-0 ml-2">
-            <span> My App / </span>
-            <strong>ProjectProposals </strong>
+            <span> GAF App / </span>
+            <strong>Project Proposals </strong>
           </h4>
           <SplitButton
             model={menuItems.filter(

@@ -22,6 +22,7 @@ import DeleteImage from "../../../assets/media/Delete.png";
 import client from "../../../services/restClient";
 import { Dropdown } from "primereact/dropdown";
 import { Skeleton } from "primereact/skeleton";
+import { Checkbox } from "primereact/checkbox";
 
 const PositionsDataTable = ({
   items,

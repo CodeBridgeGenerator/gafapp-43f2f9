@@ -65,15 +65,6 @@ const ProposalsCreateDialogComponent = (props) => {
       ret = false;
     }
 
-    if (_.isEmpty(_entity?.remarks)) {
-      error["remarks"] = `Remarks field is required`;
-      ret = false;
-    }
-
-    if (_.isEmpty(_entity?.file)) {
-      error["file"] = `File field is required`;
-      ret = false;
-    }
     if (!ret) setError(error);
     return ret;
   };
@@ -295,7 +286,7 @@ const ProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
+        <div className="col-12 field">
           <span className="align-items-center">
             <label htmlFor="projectName">Project Name:</label>
             <Dropdown
@@ -315,7 +306,7 @@ const ProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
+        <div className="col-12 md:col-4 field">
           <span className="align-items-center">
             <label htmlFor="dueDate">Due Date:</label>
             <Calendar
@@ -335,7 +326,7 @@ const ProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field flex">
+        <div className="col-12 md:col-4 field flex">
           <span className="align-items-center">
             <label htmlFor="approved">Approved:</label>
             <Checkbox
@@ -353,7 +344,7 @@ const ProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
+        <div className="col-12 md:col-4 field">
           <span className="align-items-center">
             <label htmlFor="approvedBy">Approved By:</label>
             <Dropdown
@@ -373,7 +364,7 @@ const ProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
+        <div className="col-12">
           <span className="align-items-center">
             <label htmlFor="remarks">Remarks:</label>
             <InputTextarea
@@ -394,7 +385,7 @@ const ProposalsCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 field">
+        <div className="col-10 field">
           <span className="align-items-center">
             <label htmlFor="file">File:</label>
             <UploadFilesToS3

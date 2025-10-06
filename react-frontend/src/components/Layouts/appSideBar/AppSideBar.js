@@ -57,7 +57,7 @@ const AppSideBar = (props) => {
       <div
         className={classNames(
           "duration-300 flex-shrink-0",
-          open ? "w-[280px]" : "w-[calc(3rem+20px)]",
+          open ? "w-[280px]" : "w-[calc(3rem+20px)]"
         )}
       ></div>
       <AppSideBarProvider
@@ -71,7 +71,7 @@ const AppSideBar = (props) => {
         <div
           className={classNames(
             "fixed z-[100] flex flex-col top-20 left-0 h-[calc(100vh-5rem)] overflow-y-hidden overflow-x-hidden  flex-shrink-0 shadow bg-[#F8F9FA] border-r border-[#DEE2E6] border-solid duration-300",
-            open ? "w-[280px]" : "w-[calc(3rem+20px)]",
+            open ? "w-[280px]" : "w-[calc(3rem+20px)]"
           )}
         >
           <div className="flex-grow gap-1 p-2 overflow-x-hidden overflow-y-auto no-scrollbar">
@@ -82,21 +82,21 @@ const AppSideBar = (props) => {
             </div>
             <AppMenu
               icon={<Home />}
-              label="My app"
+              label="GAF App"
               menuKey="dashboard"
               to="/dashboard"
               menus={[
                 {
                   icon: <Home />,
-                  label: "Projects",
-                  menuKey: "projects",
-                  to: "/projects",
+                  label: "Submissions",
+                  menuKey: "projectProposals",
+                  to: "/projectProposals",
                 },
                 {
                   icon: <Home />,
-                  label: "Contacts",
-                  menuKey: "contacts",
-                  to: "/contacts",
+                  label: "All Projects",
+                  menuKey: "projects",
+                  to: "/projects",
                 },
                 {
                   icon: <Home />,
@@ -110,12 +110,7 @@ const AppSideBar = (props) => {
                   menuKey: "quotes",
                   to: "/quotes",
                 },
-                {
-                  icon: <Home />,
-                  label: "ProjectProposals",
-                  menuKey: "projectProposals",
-                  to: "/projectProposals",
-                },
+
                 /* ~cb-add-menu~ */
               ]}
             />
@@ -217,7 +212,7 @@ const AppSideBar = (props) => {
               ]}
               setActiveKey={setActiveKey}
             />
-            <AppMenu
+            {/* <AppMenu
               icon={<GenAI />}
               label="Gen Ai"
               menuKey="gen-ai"
@@ -241,7 +236,7 @@ const AppSideBar = (props) => {
                   to: "/chataiUsage",
                 },
               ]}
-            />
+            /> */}
             <AppMenu
               icon={<Users />}
               label="Users"
@@ -299,6 +294,12 @@ const AppSideBar = (props) => {
                   icon: <Companies />,
                   menuKey: "companies",
                   to: "/companies",
+                },
+                {
+                  icon: <Profiles />,
+                  label: "Contacts",
+                  menuKey: "contacts",
+                  to: "/contacts",
                 },
                 {
                   label: "Branches",
@@ -387,7 +388,7 @@ const AppSideBar = (props) => {
           <div
             className={classNames(
               "text-center duration-300",
-              open ? "opacity-100" : "opacity-0",
+              open ? "opacity-100" : "opacity-0"
             )}
           >
             <AppFooter />

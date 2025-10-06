@@ -138,7 +138,7 @@ const SingleProjectProposalsPage = (props) => {
                 icon="pi pi-chevron-left"
                 onClick={() => goBack()}
               />
-              <h3 className="m-0">ProjectProposals</h3>
+              <h3 className="m-0">Project Proposals</h3>
               <SplitButton
                 model={menuItems.filter(
                   (m) => !(m.icon === "pi pi-trash" && items?.length === 0),

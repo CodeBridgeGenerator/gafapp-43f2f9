@@ -59,10 +59,6 @@ const QuotesCreateDialogComponent = (props) => {
       ret = false;
     }
 
-    if (_.isEmpty(_entity?.file)) {
-      error["file"] = `File field is required`;
-      ret = false;
-    }
     if (!ret) setError(error);
     return ret;
   };
@@ -336,6 +332,48 @@ const QuotesCreateDialogComponent = (props) => {
         </div>
         <div className="col-12 md:col-6 field">
           <span className="align-items-center">
+            <label htmlFor="applicationCostSST">Application Cost SST:</label>
+            <InputNumber
+              id="applicationCostSST"
+              className="w-full mb-3"
+              mode="currency"
+              currency="MYR"
+              locale="en-US"
+              value={_entity?.applicationCostSST}
+              onValueChange={(e) => setValByKey("applicationCostSST", e.value)}
+            />
+          </span>
+          <small className="p-error">
+            {!_.isEmpty(error["applicationCostSST"]) ? (
+              <p className="m-0" key="error-applicationCostSST">
+                {error["applicationCostSST"]}
+              </p>
+            ) : null}
+          </small>
+        </div>
+        <div className="col-12 md:col-6 field">
+          <span className="align-items-center">
+            <label htmlFor="supportCostSST">Support Cost SST:</label>
+            <InputNumber
+              id="supportCostSST"
+              className="w-full mb-3"
+              mode="currency"
+              currency="MYR"
+              locale="en-US"
+              value={_entity?.supportCostSST}
+              onValueChange={(e) => setValByKey("supportCostSST", e.value)}
+            />
+          </span>
+          <small className="p-error">
+            {!_.isEmpty(error["supportCostSST"]) ? (
+              <p className="m-0" key="error-supportCostSST">
+                {error["supportCostSST"]}
+              </p>
+            ) : null}
+          </small>
+        </div>
+        <div className="col-12 md:col-6 field">
+          <span className="align-items-center">
             <label htmlFor="firstMilestonePayment">
               First Milestone Payment:
             </label>
@@ -434,7 +472,7 @@ const QuotesCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
+        <div className="col-12 field">
           <span className="align-items-center">
             <label htmlFor="fifthMilestonePayment">
               Fifth Milestone Payment:
@@ -459,49 +497,8 @@ const QuotesCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
-          <span className="align-items-center">
-            <label htmlFor="applicationCostSST">Application Cost SST:</label>
-            <InputNumber
-              id="applicationCostSST"
-              className="w-full mb-3"
-              mode="currency"
-              currency="MYR"
-              locale="en-US"
-              value={_entity?.applicationCostSST}
-              onValueChange={(e) => setValByKey("applicationCostSST", e.value)}
-            />
-          </span>
-          <small className="p-error">
-            {!_.isEmpty(error["applicationCostSST"]) ? (
-              <p className="m-0" key="error-applicationCostSST">
-                {error["applicationCostSST"]}
-              </p>
-            ) : null}
-          </small>
-        </div>
-        <div className="col-12 md:col-6 field">
-          <span className="align-items-center">
-            <label htmlFor="supportCostSST">Support Cost SST:</label>
-            <InputNumber
-              id="supportCostSST"
-              className="w-full mb-3"
-              mode="currency"
-              currency="MYR"
-              locale="en-US"
-              value={_entity?.supportCostSST}
-              onValueChange={(e) => setValByKey("supportCostSST", e.value)}
-            />
-          </span>
-          <small className="p-error">
-            {!_.isEmpty(error["supportCostSST"]) ? (
-              <p className="m-0" key="error-supportCostSST">
-                {error["supportCostSST"]}
-              </p>
-            ) : null}
-          </small>
-        </div>
-        <div className="col-12 md:col-6 field">
+
+        <div className="col-12 md:col-4 field">
           <span className="align-items-center">
             <label htmlFor="revision">Revision:</label>
             <InputNumber
@@ -519,7 +516,7 @@ const QuotesCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field flex">
+        <div className="col-12 md:col-4 field flex">
           <span className="align-items-center">
             <label htmlFor="approved">Approved:</label>
             <Checkbox
@@ -537,7 +534,7 @@ const QuotesCreateDialogComponent = (props) => {
             ) : null}
           </small>
         </div>
-        <div className="col-12 md:col-6 field">
+        <div className="col-12 md:col-4 field">
           <span className="align-items-center">
             <label htmlFor="approvedBy">Approved By:</label>
             <Dropdown

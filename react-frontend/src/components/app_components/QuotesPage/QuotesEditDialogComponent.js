@@ -111,6 +111,9 @@ const QuotesEditDialogComponent = (props) => {
       file: _entity?.file,
     };
 
+    console.log(_data);
+    console.log(_entity?.applicationCost);
+
     setLoading(true);
     try {
       await client.service("quotes").patch(_entity._id, _data);
@@ -138,8 +141,10 @@ const QuotesEditDialogComponent = (props) => {
         title: "Edit info",
         message: "Info quotes updated successfully",
       });
+      setLoading(false);
       props.onEditResult(eagerResult.data[0]);
     } catch (error) {
+      setLoading(false);
       console.debug("error", error);
       setError(
         getSchemaValidationErrorsStrings(error) || "Failed to update info",

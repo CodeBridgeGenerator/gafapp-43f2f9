@@ -41,14 +41,12 @@ module.exports = function (app) {
       },
       remarks: {
         type: String,
-        required: true,
         comment:
           "Remarks, inputTextarea, false, true, true, true, true, true, true, , , , ,",
       },
       file: {
         type: [Schema.Types.ObjectId],
         ref: "document_storages",
-        required: true,
         comment:
           "File, file_upload, false, true, true, true, true, true, true, , , , ,",
       },

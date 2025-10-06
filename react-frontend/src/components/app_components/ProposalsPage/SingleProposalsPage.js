@@ -208,7 +208,7 @@ const SingleProposalsPage = (props) => {
 
         <div className="col-12 mt-2">
           <TabView>
-            <TabPanel header="undefined" leftIcon="pi pi-building-columns mr-2">
+            <TabPanel header="Project Proposal" leftIcon="pi pi-building-columns mr-2">
               <ProjectProposalsPage />
             </TabPanel>
           </TabView>

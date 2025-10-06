@@ -20,6 +20,7 @@ import { Dropdown } from "primereact/dropdown";
 import { Toast } from "primereact/toast";
 import DeleteImage from "../../../assets/media/Delete.png";
 import { connect } from "react-redux";
+import { Checkbox } from "primereact/checkbox";
 
 const UserInvitesDataTable = ({
   items,
