@@ -1,5 +1,3 @@
 const { Service } = require("feathers-mongoose");
 
-exports.Proposals = class Proposals extends Service {
-  
-};
+exports.Proposals = class Proposals extends Service {};

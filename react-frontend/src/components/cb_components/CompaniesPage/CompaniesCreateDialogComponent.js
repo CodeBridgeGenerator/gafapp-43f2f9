@@ -11,7 +11,7 @@ import { InputNumber } from "primereact/inputnumber";
 import { Calendar } from "primereact/calendar";
 import { Checkbox } from "primereact/checkbox";
 import { getSchemaValidationErrorsStrings } from "../../../utils";
-import { Dropdown } from "primereact/dropdown"; 
+import { Dropdown } from "primereact/dropdown";
 
 const CompaniesCreateDialogComponent = (props) => {
   const [_entity, set_entity] = useState({});
@@ -20,11 +20,7 @@ const CompaniesCreateDialogComponent = (props) => {
   const urlParams = useParams();
 
   const companyTypes = [
-    { label: "Atlas", value: "atlas" },
-    { label: "IRMS", value: "irms" },
     { label: "External", value: "external" },
-    { label: "Customer", value: "customer" },
-    { label: "Code Bridge", value: "codebridge" },
   ];
 
   useEffect(() => {
@@ -54,7 +50,7 @@ const CompaniesCreateDialogComponent = (props) => {
       name: _entity?.name,
       companyNo: _entity?.companyNo,
       newCompanyNumber: _entity?.newCompanyNumber,
-      companyType: _entity?.companyType, 
+      companyType: _entity?.companyType,
       DateIncorporated: _entity?.DateIncorporated,
       isdefault: _entity?.isdefault || false,
       createdBy: props.user._id,

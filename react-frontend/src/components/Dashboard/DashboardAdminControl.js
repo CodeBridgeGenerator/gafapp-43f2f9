@@ -9,6 +9,7 @@ import AdminServices from "./TabView/seviceTables/AdminServices";
 import ChartPopup from "./PopUpComp/ChartPopup";
 import ProjectLayout from "../Layouts/ProjectLayout";
 import client from "../../services/restClient";
+import PopupCard from "./PopUpComp/PopupCard";
 
 export const AdminControl = (props) => {
   const [isEdit, setIsEdit] = useState(false);

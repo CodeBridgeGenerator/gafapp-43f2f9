@@ -17,6 +17,7 @@ import Drag from "../../assets/media/Drag.png";
 import ChartPopup from "./PopUpComp/ChartPopup";
 import MultipleChart from "./TabView/MultipleCharts";
 import ProjectLayout from "../Layouts/ProjectLayout";
+import PopupCard from "./PopUpComp/PopupCard";
 
 export const DashboardErrors = (props) => {
   const [isEdit, setIsEdit] = useState(false);

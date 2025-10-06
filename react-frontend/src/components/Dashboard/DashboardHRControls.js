@@ -11,6 +11,7 @@ import ProjectLayout from "../Layouts/ProjectLayout";
 import client from "../../services/restClient";
 import { classNames } from "primereact/utils";
 import Report from "../../assets/icons/Report";
+import PopupCard from "./PopUpComp/PopupCard";
 
 export const HRControl = (props) => {
   const [isEdit, setIsEdit] = useState(false);

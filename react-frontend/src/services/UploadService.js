@@ -431,7 +431,7 @@ export default function UploadService({
             const mailData = {
               name: "onUploadFailure",
               type: "uploadFailure",
-              from: "no-reply@atlasirms.com.my",
+              from: "no-reply@example.com.my",
               recipients: [user.email],
               status: true,
               data: {

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { classNames } from "primereact/utils";
 import Down from "../../../assets/media/Down Small.png";
 import Ellipsis from "../../../assets/media/Ellipsis Vertical.png";
-import PopupCard from "./popUp";
+import PopupCard from "./PopupCard";
 
 const ThisWeek = ({ isEdit, onClick }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);

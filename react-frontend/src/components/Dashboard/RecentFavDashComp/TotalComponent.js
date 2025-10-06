@@ -4,7 +4,7 @@ import Drag from "../../../assets/media/Drag.png";
 import Employees from "../../../assets/media/Employees.png";
 import Ellipsis from "../../../assets/media/Ellipsis Vertical.png";
 import Increase from "../../../assets/media/Increase.svg";
-import PopupCard from "../PopUpComp/popUp";
+import PopupCard from "../PopUpComp/PopupCard";
 
 const TotalComponent = (props) => {
   const { TotalComp, total, isEdit } = props;

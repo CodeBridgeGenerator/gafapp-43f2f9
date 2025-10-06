@@ -51,7 +51,7 @@ export const AdminControl = (props) => {
                 </h1>
                 <p className="mt-4 text-base leading-6">
                   <p className="mt-4 text-base leading-6">
-                    Welcome to the Atlas IRMS Management System (AIMS) dashboard
+                    Welcome to the App dashboard
                     - a centralized platform for managing vending machines and
                     their workflows.
                   </p>

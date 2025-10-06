@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Chart } from "primereact/chart";
 import { classNames } from "primereact/utils";
-import PopupCard from "../PopUpComp/popUp";
+import PopupCard from "../PopUpComp/PopupCard";
 import Drag from "../../../assets/media/Drag.png";
 import ThisWeek from "../PopUpComp/TimePopUp";
 import client from "../../../services/restClient";

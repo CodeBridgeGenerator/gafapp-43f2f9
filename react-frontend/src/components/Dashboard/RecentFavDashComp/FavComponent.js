@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { classNames } from "primereact/utils";
 import Drag from "../../../assets/media/Drag.png";
 import Ellipsis from "../../../assets/media/Ellipsis Vertical.png";
-import PopupCard from "../PopUpComp/popUp";
+import PopupCard from "../PopUpComp/PopupCard";
 
 const PinnedItems = (props) => {
   const { Pinned, pinnedItems = [], isEdit } = props;

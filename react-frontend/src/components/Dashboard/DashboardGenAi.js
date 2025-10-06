@@ -9,6 +9,7 @@ import CompanyServices from "./TabView/seviceTables/GenAiServices";
 import ChartPopup from "./PopUpComp/ChartPopup";
 import ProjectLayout from "../Layouts/ProjectLayout";
 import client from "../../services/restClient";
+import PopupCard from "./PopUpComp/PopupCard";
 
 export const DataManagement = (props) => {
   const [isEdit, setIsEdit] = useState(false);

@@ -10,6 +10,7 @@ import ChartPopup from "./PopUpComp/ChartPopup";
 import ProjectLayout from "../Layouts/ProjectLayout";
 import client from "../../services/restClient";
 import { classNames } from "primereact/utils";
+import PopupCard from "./PopUpComp/PopupCard";
 
 export const DashboardUserManagement = (props) => {
   const [isEdit, setIsEdit] = useState(false);

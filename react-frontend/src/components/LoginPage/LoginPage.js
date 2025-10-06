@@ -37,7 +37,7 @@ const LoginPage = (props) => {
     // Only run this check once when component mounts
     if (!sessionChecked) {
       const params = new URLSearchParams(location.search);
-      if (params.get('sessionExpired') === 'true') {
+      if (params.get("sessionExpired") === "true") {
         props.alert({
           type: "error",
           message: "Your session has expired. Please login again.",
@@ -53,7 +53,6 @@ const LoginPage = (props) => {
     }
   }, [props.isLoggedIn, sessionChecked]);
 
-
   const onEnter = (e) => {
     if (e.key === "Enter") login();
   };
@@ -63,7 +62,6 @@ const LoginPage = (props) => {
       .service("userInvites")
       .find({ query: { emailLogin: email } });
   };
-
 
   // Function to get device information
   const getDeviceDetails = () => {
@@ -77,69 +75,69 @@ const LoginPage = (props) => {
     };
   };
 
-// In LoginPage.js - Corrected version
-const login = async () => {
-  setLoading(true);
-  if (validate()) {
-    try {
-      const loginEmail = isEmail ? email : `${email}@atlasirms.com.my`;
-      const deviceDetails = getDeviceDetails();
-      props
-        .login({ email: loginEmail, password })
-        .then(async (res) => {
-          try {
-            await client.service("loginHistory").create({
-              userId: res.user._id,
-              device: deviceDetails.device,
-              browser: deviceDetails.browser,
-              userAgent: navigator.userAgent,
-            });
-          } catch (historyError) {
-            console.error("Failed to save login history:", historyError);
-          }
+  // In LoginPage.js - Corrected version
+  const login = async () => {
+    setLoading(true);
+    if (validate()) {
+      try {
+        const loginEmail = isEmail ? email : `${email}@example.com.my`;
+        const deviceDetails = getDeviceDetails();
+        props
+          .login({ email: loginEmail, password })
+          .then(async (res) => {
+            try {
+              await client.service("loginHistory").create({
+                userId: res.user._id,
+                device: deviceDetails.device,
+                browser: deviceDetails.browser,
+                userAgent: navigator.userAgent,
+              });
+            } catch (historyError) {
+              console.error("Failed to save login history:", historyError);
+            }
 
-          navigate("/project");
-          setLoading(false);
-        })
-        .catch((error) => {
-          console.log('login error', error);
-          let message = error.message || "Invalid Login";
-          
-          // Handle account locked scenario
-          if (message.includes('Account locked')) {
-            props.alert({
-              title: "Account Locked",
-              type: "error",
-              message: message,
-            });
-          } else if (message.includes('attempts remaining')) {
-            props.alert({
-              title: "Login Failed",
-              type: "error",
-              message: message,
-            });
-          } else {
-            props.alert({
-              title: "Login Failed",
-              type: "error",
-              message: "Invalid login credentials",
-            });
-          }
-          setLoading(false);
+            navigate("/project");
+            setLoading(false);
+          })
+          .catch((error) => {
+            console.log("login error", error);
+            let message = error.message || "Invalid Login";
+
+            // Handle account locked scenario
+            if (message.includes("Account locked")) {
+              props.alert({
+                title: "Account Locked",
+                type: "error",
+                message: message,
+              });
+            } else if (message.includes("attempts remaining")) {
+              props.alert({
+                title: "Login Failed",
+                type: "error",
+                message: message,
+              });
+            } else {
+              props.alert({
+                title: "Login Failed",
+                type: "error",
+                message: "Invalid login credentials",
+              });
+            }
+            setLoading(false);
+          });
+      } catch (error) {
+        console.error("Error during login:", error);
+        props.alert({
+          title: "Error",
+          type: "error",
+          message: "An error occurred during login",
         });
-    } catch (error) {
-      console.error("Error during login:", error);
-      props.alert({
-        title: "Error",
-        type: "error",
-        message: "An error occurred during login",
-      });
+        setLoading(false);
+      }
+    } else {
       setLoading(false);
     }
-  } else {
-    setLoading(false);
-  }
-};
+  };
 
   const validate = () => {
     let isValid = true;
@@ -260,7 +258,7 @@ const login = async () => {
           <div className="w-full px-3 mx-3 card md:px-7">
             <div className="my-4 text-4xl font-semibold text-center text-primary">
               {/* Code Bridge Image */}
-             {projectName}
+              {projectName}
             </div>
             <div>
               <div className="w-full mb-4">
@@ -334,7 +332,7 @@ const login = async () => {
             </div>
             <div className="mt-4 text-center">
               <p className="text-sm">
-                Haven't activate your account yet?{" "}
+                Haven&apos;t activate your account yet?{" "}
                 <Link
                   to="/signup"
                   className="font-semibold cursor-pointer text-primary"
@@ -349,7 +347,7 @@ const login = async () => {
                 to="/login-faq"
                 className="m-0 text-sm font-semibold cursor-pointer !text-link"
               >
-                Can't log in?
+                Can&apos;t log in?
               </Link>
               <Link
                 onClick={() => setEmailOrStaffId((prev) => !prev)}
@@ -371,7 +369,7 @@ const login = async () => {
                 Forgot your password?
               </h2>
               <p className="text-[14px]">
-                Please enter your registered email and we'll send you
+                Please enter your registered email and we&apos;ll send you
                 instructions to reset your password.
               </p>
             </div>
@@ -419,9 +417,9 @@ const login = async () => {
             <div className="text-center">
               <h2 className="mb-4 text-2xl font-semibold">Check your email</h2>
               <p className="text-[14px]">
-                We've sent you an email with instructions to reset your
-                password. Check your Junk/Span folder if it doesn't arrive. If
-                you still can't log in, click resend email or contact your
+                We&apos;ve sent you an email with instructions to reset your
+                password. Check your Junk/Span folder if it doesn&apos;t arrive. If
+                you still can&apos;t log in, click resend email or contact your
                 administrator.
               </p>
             </div>

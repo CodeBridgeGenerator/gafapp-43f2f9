@@ -5,7 +5,7 @@ import { classNames } from "primereact/utils";
 import Drag from "../../../assets/media/Drag.png";
 import Ellipsis from "../../../assets/media/Ellipsis Vertical.png";
 import Down from "../../../assets/media/Down Small.png";
-import PopupCard from "../PopUpComp/popUp";
+import PopupCard from "../PopUpComp/PopupCard";
 import ThisWeek from "../PopUpComp/TimePopUp";
 
 export default function BarChart(props) {

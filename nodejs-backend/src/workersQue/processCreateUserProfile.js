@@ -2,7 +2,7 @@ const { Queue, Worker } = require("bullmq");
 const connection = require("../cbServices/redis/config");
 const { decryptData } = require("../utils/encryption");
 const jobQueue = new Queue("createUserProfile", {
-  connection
+  connection,
 });
 
 const createUserProfileInDB = async (app, superAdmin, data) => {

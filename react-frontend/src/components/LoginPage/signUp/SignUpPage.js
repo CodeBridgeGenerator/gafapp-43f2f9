@@ -69,7 +69,7 @@ const SignUpPage = (props) => {
 
     if (!isEmail) {
       // If signing up with Staff ID, append the domain
-      finalEmail = `${email}@atlasirms.com.my`;
+      finalEmail = `${email}@example.com.my`;
     }
 
     if (!emailRegex.test(finalEmail)) {

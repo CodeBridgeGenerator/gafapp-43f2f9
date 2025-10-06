@@ -20,13 +20,7 @@
   "stack": [
     {
       "appName": "nodejs-backend",
-      "environments": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
+      "environments": [null, null, null, null, null],
       "pathToLogo": {
         "s": "/assets/applications_logos/nodejs-s.png",
         "l": "/assets/applications_logos/nodejs.png"
@@ -38,13 +32,7 @@
     },
     {
       "appName": "react-frontend",
-      "environments": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
+      "environments": [null, null, null, null, null],
       "pathToLogo": {
         "s": "/assets/applications_logos/react-s.png",
         "l": "/assets/applications_logos/react.png"
@@ -361,9 +349,7 @@
             "refServiceName": "companies",
             "refDatabaseName": "companies",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -404,9 +390,7 @@
             "refServiceName": "contacts",
             "refDatabaseName": "contacts",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "contactName"
-            ]
+            "identifierFieldName": ["contactName"]
           }
         },
         {
@@ -1511,9 +1495,7 @@
             "refServiceName": "companies",
             "refDatabaseName": "companies",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -1792,9 +1774,7 @@
             "refServiceName": "projects",
             "refDatabaseName": "projects",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "projectName"
-            ]
+            "identifierFieldName": ["projectName"]
           }
         },
         {
@@ -1913,9 +1893,7 @@
             "refServiceName": "users",
             "refDatabaseName": "users",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -2092,9 +2070,7 @@
             "refServiceName": "projects",
             "refDatabaseName": "projects",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "projectName"
-            ]
+            "identifierFieldName": ["projectName"]
           }
         },
         {
@@ -2568,9 +2544,7 @@
             "refServiceName": "users",
             "refDatabaseName": "users",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
@@ -2677,9 +2651,7 @@
             "refServiceName": "proposals",
             "refDatabaseName": "proposals",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "proposalRef"
-            ]
+            "identifierFieldName": ["proposalRef"]
           }
         },
         {
@@ -2727,9 +2699,7 @@
             "refServiceName": "quotes",
             "refDatabaseName": "quotes",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "quoteNo"
-            ]
+            "identifierFieldName": ["quoteNo"]
           }
         },
         {
@@ -2869,9 +2839,7 @@
             "refServiceName": "users",
             "refDatabaseName": "users",
             "relationshipType": "one-to-one",
-            "identifierFieldName": [
-              "name"
-            ]
+            "identifierFieldName": ["name"]
           }
         },
         {
