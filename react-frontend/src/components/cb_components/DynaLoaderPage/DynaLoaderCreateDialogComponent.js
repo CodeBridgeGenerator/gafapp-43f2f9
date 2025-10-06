@@ -770,16 +770,16 @@ const DynaLoaderCreateDialogComponent = (props) => {
   const renderMissingValues = () => {
     let showMissing = false;
     const missingFields = () =>
-      Object.entries(currentRecords).map((k) => (
-        <div className="mt-2">
+      Object.entries(currentRecords).map((k, index) => (
+        <div className="mt-2" key={index}>
           <label>service name:</label>
           <h3>{k[0]}</h3>
           <label>missing data:</label>
           {k[1].map((v, i) => {
             showMissing = true;
             return (
-              <ul>
-                <li>
+              <ul key={i}>
+                <li key={i*10}>
                   <h5 key={i}>{v}</h5>
                 </li>
               </ul>

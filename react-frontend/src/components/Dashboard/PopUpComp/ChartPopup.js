@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { classNames } from "primereact/utils"; // Ensure classNames is imported
 import Edit from "../../../assets/media/Edit.png"; // Import the Trash icon
 
-const ManageTabsPopup = (props) => {
+const ChartPopup = (props) => {
   const { onClose, isEdit, handlePopupToggle } = props;
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -85,4 +85,4 @@ const ManageTabsPopup = (props) => {
   );
 };
 
-export default ManageTabsPopup;
+export default ChartPopup;

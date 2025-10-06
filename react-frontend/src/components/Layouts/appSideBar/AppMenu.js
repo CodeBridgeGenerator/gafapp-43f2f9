@@ -39,7 +39,8 @@ const AppMenu = (props) => {
   };
 
   const renderSubMenu = useMemo(() => {
-    return (subMenuMenus, parentActive) => {
+    // eslint-disable-next-line react/display-name
+    return (subMenuMenus) => {
       return (
         <div
           className={classNames("overflow-hidden transition-all duration-300")}

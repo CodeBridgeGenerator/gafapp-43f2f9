@@ -91,7 +91,7 @@ const SingleDocumentStoragesPage = (props) => {
             <div className="col-12 md:col-6 lg:col-3">
               <label className="text-sm text-primary">Url</label>
               <p className="m-0 ml-3">
-                <a href={_entity?.url} target="_blank">
+                <a href={_entity?.url} target="_blank" rel="noreferrer">
                   {_entity?.url}
                 </a>
               </p>

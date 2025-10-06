@@ -81,7 +81,7 @@ const VerificationStep = (props) => {
         <h3 className="font-semibold">Verify your email</h3>
         <p>
           Please enter the 6-digit code sent to your email. Check your Junk/Spam
-          folder if doesn't arrive.
+          folder if doesn&apos;t arrive.
         </p>
       </div>
       <div className="flex flex-col items-center gap-2 mt-14">

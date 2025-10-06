@@ -22,6 +22,7 @@ import DeleteImage from "../../../assets/media/Delete.png";
 import { connect } from "react-redux";
 import { InputText } from "primereact/inputtext";
 import { Skeleton } from "primereact/skeleton";
+import { Checkbox } from "primereact/checkbox";
 
 const CompaniesDataTable = ({
   items,

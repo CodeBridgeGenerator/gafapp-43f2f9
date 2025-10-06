@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import RecentComp from "./RecentFavDashComp/RecentComp";
-import PinnedItems from "./RecentFavDashComp/FavComponent";
-import TotalComponent from "./RecentFavDashComp/TotalComponent";
 import LineChart from "./Charts/LineChart/DataLineChart";
 import CompanyBarChart from "./Charts/BarChart/DataBarChart";
 import DataServices from "./TabView/seviceTables/DataServices";
