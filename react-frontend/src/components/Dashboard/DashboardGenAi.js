@@ -137,7 +137,7 @@ export const DataManagement = (props) => {
           <div className="mb-3">
             <ChartPopup isEdit={isEdit} setIsEdit={setIsEdit} />
           </div>
-          {showCard && <PopupCard />}
+          {showCard && <PopupCard/>}
           <div className="grid">
             {/* Line Chart */}
 

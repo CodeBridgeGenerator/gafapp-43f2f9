@@ -118,9 +118,9 @@ function ProfileCard(props) {
 
   function ProfileFullSection({ items, className }) {
     return items.map((item, index) => (
-      <div className={`flex ${className} max-md:max-w-full mt-3`}>
+      <div key={index} className={`flex ${className} max-md:max-w-full mt-3`}>
         <div
-          key={index}
+          
           className="flex flex-col flex-1 shrink basis-0 min-w-[250px] max-md:max-w-full"
         >
           <div

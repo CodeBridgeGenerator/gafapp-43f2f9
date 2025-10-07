@@ -1,7 +1,7 @@
 {
   "projectName": "gafapp",
   "description": "Gen Ai Fund App",
-  "auth": null,
+  "auth": "jwt",
   "database": {
     "_id": "6718ba9bc686b63c57a218e6",
     "type": "database",
@@ -407,7 +407,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Project Name",
           "faker": {
@@ -453,7 +453,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Id GAF",
           "faker": {
@@ -543,7 +543,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Problem Statement",
           "faker": {
@@ -588,7 +588,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Relevant AI Technologies",
           "faker": {
@@ -633,7 +633,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Expected Outcomes / Success Me",
           "faker": {
@@ -678,7 +678,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Current Solutions",
           "faker": {
@@ -723,7 +723,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Target Users",
           "faker": {
@@ -768,7 +768,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Data Availability & Readiness",
           "faker": {
@@ -813,7 +813,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Integration Deploy Requirement",
           "faker": {
@@ -858,7 +858,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Budget Allocation",
           "faker": {
@@ -903,7 +903,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Referred Collaboration Timeline",
           "faker": {
@@ -948,7 +948,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "chip",
           "label": "Tags",
           "faker": {
@@ -993,7 +993,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Founded",
           "faker": {
@@ -1038,7 +1038,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Headquarters",
           "faker": {
@@ -1083,7 +1083,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Deadline",
           "faker": {
@@ -1128,7 +1128,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Days Remaining",
           "faker": {
@@ -1173,7 +1173,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Budget",
           "faker": {
@@ -1218,7 +1218,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Category",
           "faker": {
@@ -1263,7 +1263,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Enterprise",
           "faker": {
@@ -1308,7 +1308,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Posted",
           "faker": {
@@ -1353,7 +1353,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Others",
           "faker": {
@@ -1398,7 +1398,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Path",
           "faker": {
@@ -1512,7 +1512,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Contact Name",
           "faker": {
@@ -1558,7 +1558,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Position",
           "faker": {
@@ -1604,7 +1604,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "LinkedIn",
           "faker": {
@@ -1671,7 +1671,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Proposal Ref",
           "isMultiple": false,
@@ -1711,7 +1711,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Proposal Name",
           "isMultiple": false,
@@ -1910,7 +1910,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "inputTextarea",
           "label": "Remarks",
           "isMultiple": false,
@@ -1948,7 +1948,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "file_upload",
           "label": "File",
           "isMultiple": false,
@@ -2007,7 +2007,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "p",
           "label": "Quote No",
           "isMultiple": false,
@@ -2561,7 +2561,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "file_upload",
           "label": "File",
           "isMultiple": false,
@@ -2901,7 +2901,7 @@
           "creatable": true,
           "editable": true,
           "sortable": true,
-          "required": true,
+          "required": false,
           "component": "inputTextarea",
           "label": "Remarks",
           "faker": {

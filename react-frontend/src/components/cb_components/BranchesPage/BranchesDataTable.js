@@ -22,6 +22,7 @@ import DeleteImage from "../../../assets/media/Delete.png";
 import { connect } from "react-redux";
 import client from "../../../services/restClient";
 import { Skeleton } from "primereact/skeleton";
+import { Checkbox } from "primereact/checkbox";
 
 const BranchesDataTable = ({
   items,

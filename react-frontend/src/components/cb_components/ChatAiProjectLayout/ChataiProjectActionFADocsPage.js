@@ -51,11 +51,11 @@ const ChataiProjectActionFADocsPage = (props) => {
       <TabView>
         <TabPanel header="Conventional">
           <div
-            class="flex flex-wrap flex-column justify-content-start gap-3"
+            className="flex flex-wrap flex-column justify-content-start gap-3"
             style={{ minHeight: "100px" }}
           >
             {refFaDocs.map((doc, i) => (
-              <div
+              <div key={i}
                 className="flex align-items-center font-bold"
                 style={{ minWidth: "200px", minHeight: "10px" }}
               >
@@ -75,7 +75,7 @@ const ChataiProjectActionFADocsPage = (props) => {
         </TabPanel>
 
         <TabPanel header="Islamic">
-          <div class="flex flex-column" style={{ minHeight: "100px" }}>
+          <div className="flex flex-column" style={{ minHeight: "100px" }}>
             <div
               className="flex align-self-auto  justify-content-start font-bold m-2"
               style={{ minWidth: "200px", minHeight: "10px" }}

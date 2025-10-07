@@ -28,7 +28,7 @@ const DocumentStoragesDataTable = ({
   const pTemplate6 = (rowData, { rowIndex }) => <p>{rowData.versionId}</p>;
   const pTemplate7 = (rowData, { rowIndex }) => (
     <p>
-      <a href={rowData?.url} target="_blank">
+      <a href={rowData?.url} target="_blank" rel="noreferrer">
         {rowData?.url}
       </a>
     </p>

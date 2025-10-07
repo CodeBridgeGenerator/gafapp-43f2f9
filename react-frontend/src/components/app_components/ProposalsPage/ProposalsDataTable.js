@@ -17,6 +17,7 @@ import ExportIcon from "../../../assets/media/Export & Share.png";
 import CopyIcon from "../../../assets/media/Clipboard.png";
 import DuplicateIcon from "../../../assets/media/Duplicate.png";
 import DeleteIcon from "../../../assets/media/Trash.png";
+import { Checkbox } from "primereact/checkbox";
 
 const ProposalsDataTable = ({
   items,

@@ -61,7 +61,7 @@ const ChataiProjectResponsePage = (props) => {
       <div className="grid grid-nogutter flex">
         <div className="col-5 min-h-max fadein animation-duration-1000 flex flex-wrap align-items-center">
           <span className="vertical-align-middle">
-            <h2 className="ml-8">What's your objective?</h2>
+            <h2 className="ml-8">What&apos;s your objective?</h2>
           </span>
         </div>
         <div className="grid flex justify-content-center mt-3">
